@@ -10,83 +10,72 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+.collapse-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 56px;
+  background-color: #FFF;
+  color: #000;
+  display: inline;
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
-}
 
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
-}
+  ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-}
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+    a {
+      font-size: 20px;
+      color: #000;
+      text-decoration: none;
+    }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
+    a:hover {
+      color: green;
+    }
   }
-}
-.container-narrow > hr {
-  margin: 30px 0;
+
+
+  a {
+    font-size: 40px;
+  }
+
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+#menu-icon {
+  display: none;
+  float: right;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+@media only screen and (max-device-width: 480px) {
+  #menu-icon {
+    display: block;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+
+  #menu {
+    display: none;
+    padding-top: 56px;
+    width: 100%;
+
+    li {
+      height: 40px;
+      font-size: 30px;
+      background-color: #999;
+      border-bottom: 1px solid #ccc;
+    }
+
+  }
+
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.section {
+  min-height: 300px;
+  padding-top: 56px;
 }

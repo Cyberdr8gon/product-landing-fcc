@@ -7,6 +7,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/responsive-nav/responsive-nav.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -20,29 +21,30 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <nav class="collpase-nav">
-      <a href="#" id="menu-toggle" class="anchor-link"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+    <nav class="collapse-nav">
+      <div id="menu-icon">
+        <a ><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+      </div>
       <ul class="simple-toggle" id="menu">
-        <li>Master Builder's Club</li>
-        <li>The Vision</li>
-        <li>How it works</li>
-        <li>About Us</li>
-        <li>Examples</li>
-        <li>Sign Up</li>
+        <a href="#splash"><li>Master Builder's Club</li></a>
+        <a href="#vision"><li>The Vision</li></a>
+        <a href="#how-works"><li>How it works</li></a>
+        <a href="#about"><li>About Us</li></a>
+        <a href="#sign-up"><li>Sign Up</li></a>
       </ul>
     </nav>
 
-    <div class="section section-splash">
+    <div class="section section-splash" id="splash">
       <h1>What if you could recreate that childhood feeling of a new Lego?</h1>
-      <h2>The challenge, the focus. Sharable with your family.</h2>
+      <h2>The challenge, the focus. Shareable with your family.</h2>
     </div>
-    <div class="section section-vision">
+    <div class="section section-vision" id="vision">
       <h1>The joy of building</h1>
       <p>
-        There is nothing like putting together a massive Lego. Unfortunately, as you get older, the sets availible from Lego are a little less amazing then they used to be. They have made some attempts, such as the collectors editions, but nothing to really draw in adults. And we missed all of that fun. So, we are partnering with some of the best builders we can find (hopefully some of those amazing builders on Mocpages) and provide biannual (or possibly more if we have high demand) high complexity custom sets for purchase.
+        There is nothing like putting together a massive Lego. Unfortunately, as you get older, the sets available from Lego are a little less amazing then they used to be. They have made some attempts, such as the collectors editions, but nothing to really draw in adults. And we missed all of that fun. So, we are partnering with some of the best builders we can find (hopefully some of those amazing builders on Mocpages) and provide biannual (or possibly more if we have high demand) high complexity custom sets for purchase.
       </p>
     </div>
-    <div class="section section-how-works">
+    <div class="section section-how-works" id="how-works">
       <h1>How it works</h1>
       <ol>
         <li>Poll</li>
@@ -50,17 +52,18 @@
         <li>Build</li>
       </ol>
     </div>
-    <div class="section section-about">
+    <div class="section section-about" id="about">
       <h1>About Us</h1>
       <p>
-        I am just a advid (bad) lego builder who misses building Lego sets on Christmas and my birthday, every time. Legos prepared me for being a Computer Science and Applied Math student. When I was younger, I would build with legos insessently. I was talking to some of my friends who also built legos, and they never did really stop building. Only, they felt like it wasn't as challenging and fun anymore. I want to change that. Busy young professionals don't have nearly the time they used to, but legos offer a nice, happy, nostalgic escape. 
+        I am just a avid (bad) Lego builder who misses building Lego sets on Christmas and my birthday, every time. Legos prepared me for being a Computer Science and Applied Math student. When I was younger, I would build with Legos incessantly. I was talking to some of my friends who also built legos, and they never did really stop building. Only, they felt like it wasn't as challenging and fun anymore. I want to change that. Busy young professionals don't have nearly the time they used to, but legos offer a nice, happy, nostalgic escape. 
       </p>
     </div>
-    <div class="section section-example">
-    
-    </div>
-    <div class="section section-sign-up">
-    
+
+    <div class="section section-sign-up" id="sign-up">
+      <h1>If you are interested, we will be in touch!</h1>
+      <div class="contact-form">
+        
+      </div>
     </div>
 
 
@@ -78,6 +81,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/responsive-nav/responsive-nav.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
@@ -99,5 +103,6 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
   </body>
 </html>

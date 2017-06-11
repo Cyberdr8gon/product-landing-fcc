@@ -2,7 +2,8 @@
   "name": "product-landing-fcc",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5"
+    "bootstrap-sass": "~3.3.5",
+    "responsive-nav": "^1.0.39"
   },
   "overrides": {
     "bootstrap-sass": {
