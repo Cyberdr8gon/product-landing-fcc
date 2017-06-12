@@ -42,5 +42,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "bourbon": "^4.3.4"
   }
 }

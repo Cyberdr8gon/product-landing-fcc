@@ -1,12 +1,19 @@
 
-let menuOpen = false;
 
-document.getElementById("menu-icon").addEventListener("click", function() {
-  if(menuOpen) {
-    document.getElementById("menu").style.display = "none";
-    menuOpen = false;
-  } else {
-    document.getElementById("menu").style.display = "block";
-    menuOpen = true;
-  }
-})
+
+(function(){
+  let menuOpen = false;
+
+  document.getElementById("menu-trigger").addEventListener("click", function() {
+    let element = document.getElementById("nav-root");
+
+    if(!menuOpen) {
+      element.classList.add("nav-is-visible");
+      menuOpen = true;
+    } else {
+      element.classList.remove("nav-is-visible");
+      menuOpen = false;
+    }
+  });
+
+})();
