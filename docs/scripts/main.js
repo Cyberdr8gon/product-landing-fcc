@@ -1,0 +1,1 @@
+"use strict";!function(){var e=!1;document.getElementById("menu-trigger").addEventListener("click",function(){var t=document.getElementById("nav-root");e?(t.classList.remove("nav-is-visible"),e=!1):(t.classList.add("nav-is-visible"),e=!0)})}();
